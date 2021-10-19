@@ -1,0 +1,20 @@
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    // 泛型列表
+    a := [1.0, 2.0, 3.0]
+    println(a)
+    // 列表生成器
+    println([i * 2 for i <- a, i == 2])
+    // 字典倒置
+    myDic := {"name": "sxk", "age": 18}
+    println({value:key for key,value <- myDic})
+
+}
+
+// need created go.mod, defined a module name
+// gop run main.go
